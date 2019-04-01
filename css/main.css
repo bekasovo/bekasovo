@@ -1,0 +1,36 @@
+}
+#1 {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.arrow {
+  height: 100px;
+  margin: 0px auto;
+}
+.empty {
+  display: flex;
+  width: 1000px;
+  height: 100px;
+  margin: 0px auto;
+}
+.text {
+  text-transform: uppercase;
+  color: #b68410;
+  font-size: 25px;
+}
+.detmir {
+  width: 800px;
+  background: url(/img/detmir.png);
+  height: 788px;
+  margin: 0px auto;
+}
+
+.detmir:hover {
+  background: url(/img/walk.jpg);
+  width: 800;
+  height: 788;
+}

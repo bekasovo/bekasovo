@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Detmir</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+<body>
+  <section id="1">
+    <div class="empty"><img class="arrow" src="/img/arrow.png" alt=""><p class="text">наведи своей стрелочкой, дружог</p><img class="arrow" src="/img/arrow.png" alt="">
+      
+    </div>
+
+    <div class="container">
+      <!-- <a href="#" class="detmir"></a> -->
+      <button class="detmir" onclick="document.getElementById('play').pause()"></button>
+    </div>
+    <audio id="play" src="/snd/play2.mp3" preload="auto"></audio>
+  </section>
+  <script>
+var play = $("#play")[0];
+$(".detmir")
+   .mouseenter(function() {
+      play.play();
+   });
+$(".detmir")
+   .mouseleave(function() {
+      play.pause();
+   });
+</script>
+</body>
+</html>
