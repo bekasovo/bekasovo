@@ -34,3 +34,24 @@
   width: 800;
   height: 788;
 }
+
+/* ============================  АДАПТИВ   ============================ */
+@media(min-width: 0px) and (max-width: 375px) {
+  .text {
+    text-align: center;
+    color: red;
+  }
+.detmir {
+  background: url(/img/detmir.png);
+  width: 800px;
+  height: 500px;
+  margin: 0px auto;
+}
+
+.detmir:hover {
+  background: url(/img/walk.jpg);
+  width: 800px;
+  height: 500;
+}
+
+}
