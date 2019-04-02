@@ -43,6 +43,9 @@
 /* ============================  АДАПТИВ   ============================ */
 @media(min-width: 0px) and (max-width: 375px) {
 
+  body {
+    max-width: 375px;
+  }
   .text {
     /* text-align: center; */
     color: #835e08;
