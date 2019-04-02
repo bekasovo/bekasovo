@@ -1,6 +1,9 @@
 #1 {
   display: flex;
   flex-direction: column;
+  /* width: 1000px; */
+  /* height: 100px; */
+  margin: 0px auto;
 }
 .container {
   display: flex;
@@ -8,13 +11,14 @@
 }
 .arrow {
   height: 100px;
-  margin: 0px auto;
 }
 .empty {
   display: flex;
+  padding-left: 28%;
   width: 1000px;
   height: 100px;
   margin: 0px auto;
+  
 }
 .text {
   text-transform: uppercase;
@@ -23,34 +27,55 @@
 }
 .detmir {
   width: 800px;
-  background: url(/img/detmir.png);
+  background: url(/img/detmir.png) no-repeat;
   height: 788px;
   margin: 0px auto;
 }
 
 .detmir:hover {
-  background: url(/img/walk.jpg);
+  background: url(/img/walk.jpg) no-repeat;
   width: 800;
   height: 788;
 }
 
 /* ============================  АДАПТИВ   ============================ */
 @media(min-width: 0px) and (max-width: 375px) {
-  .text {
-    text-align: center;
-    color: red;
+  body {
+   max-width: 375px;
   }
-.detmir {
-  background: url(/img/detmir.png);
-  width: 800px;
-  height: 500px;
-  margin: 0px auto;
-}
+  .text {
+    /* text-align: center; */
+    color: #835e08;
+    font-size: 16px;
+  }
 
-.detmir:hover {
-  background: url(/img/walk.jpg);
-  width: 800px;
-  height: 500;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+  }
+  .empty img {
+    width: 50px;
+    height: 50px;
+  }
+  .empty {
+    display: flex;
+    padding-left: 10%;
+    /* margin: 0px auto; */
+  }
 
+  .detmir {
+    /* width: 300px; */
+    /* max-width: 375px */
+    background-size: 100%;
+    /* margin: 0px auto; */
+  }
+
+  .detmir:hover {
+    background-size: 100%;
+    /* height: 500; */
+  }
+ button {
+   max-width: 375px
+ }
 }
